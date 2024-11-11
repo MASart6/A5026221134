@@ -1,0 +1,44 @@
+/* CSS untuk body */
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #dff7d9;
+    font-size: 20px;
+    color: #333;
+}
+
+/* Style untuk link */
+a:link,
+a:visited {
+    text-decoration: none;
+    color: #2525ef;
+}
+a:hover {
+    font-size: larger;
+    color: #eefe00;
+    text-decoration: underline;
+}
+
+/* Style untuk heading dan paragraf */
+.headingmerah {
+    color: red;
+    text-align: center;
+}
+.paragraf-kanan {
+    text-align: right;
+    color: #008888;
+}
+.paragraf-tengah {
+    text-align: center;
+    font-size: larger;
+}
+
+/* Kotak dengan sudut melengkung */
+.kotak {
+    border-radius: 25px;
+    border: 2px solid #73ad21;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 300px;
+    text-align: center;
+    background-color: #ffffff;
+}

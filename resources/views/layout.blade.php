@@ -8,6 +8,11 @@
     <meta content="" name="keywords">
     <meta content="" name="description">
 
+    <!-- Favicon -->
+    <link rel="icon" href="{{ asset('img/logo.png') }}" alt="logo_MAS" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ asset('img/logo.png') }}" alt="logo_MAS" type="image/x-icon">
+
+
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

@@ -166,21 +166,33 @@
     <!-- Expertise End -->
 
 
-    <!-- Service Start -->
+    <!-- Task Start -->
     @php
-        // Array of services
+        // Array of Task
         $services = [
             [
-                'title' => 'Contoh 1',
-                'link' => '/contoh1'
+                'title' => 'Hello HTML',
+                'link' => '/helloHtml'
             ],
             [
-                'title' => 'Contoh 2',
-                'link' => '/contoh2'
+                'title' => 'Style CSS',
+                'link' => '/styleCss'
             ],
             [
-                'title' => 'Week 1',
-                'link' => '/Week1'
+                'title' => 'Responsive',
+                'link' => '/responsive'
+            ],
+            [
+                'title' => 'Form',
+                'link' => '/form'
+            ],
+            [
+                'title' => 'Linktree',
+                'link' => '/linktree'
+            ],
+            [
+                'title' => 'Our Testimoni',
+                'link' => '/ourTestimoni'
             ],
         ];
     @endphp
@@ -207,7 +219,7 @@
                 </div>
             </div>
         </div>
-    <!-- Service End -->
+    <!-- Task End -->
 
 
     <!-- Contact Start -->

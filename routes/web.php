@@ -6,16 +6,26 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// Route untuk /contoh1 yang merender resources/views/contoh1/home.blade.php
-Route::get('/contoh1', function () {
-    return view('contoh1.home');
+Route::get('/helloHtml', function(){
+    return view('helloHtml.home');
 });
 
-// Route untuk /contoh2 yang merender resources/views/contoh2/home.blade.php
-Route::get('/contoh2', function () {
-    return view('contoh2.home');
+Route::get('/styleCss', function(){
+    return view('styleCss.home');
 });
 
-Route::get('/Week1', function(){
-    return view('Week1.home');
+Route::get('/responsive', function(){
+    return view('responsive.home');
+});
+
+Route::get('/form', function(){
+    return view('form.home');
+});
+
+Route::get('/linktree', function(){
+    return view('linktree.home');
+});
+
+Route::get('/ourTestimoni', function(){
+    return view('ourTestimoni.home');
 });
