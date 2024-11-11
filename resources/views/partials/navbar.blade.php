@@ -13,7 +13,7 @@
             <a href="#home" class="nav-item nav-link active">Home</a>
             <a href="#about" class="nav-item nav-link">About</a>
             <a href="#skill" class="nav-item nav-link">Skills</a>
-            <a href="#service" class="nav-item nav-link">Services</a>
+            <a href="#service" class="nav-item nav-link">Assignments</a>
             <a href="#contact" class="nav-item nav-link">Contact</a>
         </div>
     </div>
