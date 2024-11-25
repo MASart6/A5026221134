@@ -1,31 +1,23 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PegawaiController;
+use App\Http\Controllers\DosenController;
 
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/helloHtml', function(){
-    return view('helloHtml.home');
+Route::get('halo', function () {
+    return "Halo, Selamat datang di tutorial laravel www.malasngoding.com";
 });
 
-Route::get('/styleCss', function(){
-    return view('styleCss.home');
+Route::get('blog', function () {
+    return view('blog');
 });
 
-Route::get('/responsive', function(){
-    return view('responsive.home');
-});
+Route::get('dosen', [DosenController::class, 'index']);
+Route::get('/pegawai/{nama}', [PegawaiController::class, 'index']);
 
-Route::get('/form', function(){
-    return view('form.home');
-});
-
-Route::get('/linktree', function(){
-    return view('linktree.home');
-});
-
-Route::get('/ourTestimoni', function(){
-    return view('ourTestimoni.home');
-});
+Route::get('/formulir', [PegawaiController::class, 'formulir']);
+Route::post('/formulir/proses', [PegawaiController::class, 'proses']);
