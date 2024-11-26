@@ -28,12 +28,12 @@
 #spinner {
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.5s ease-out, visibility 0s linear 0.5s;
     z-index: 99999;
-    -webkit-transition: opacity 0.5s ease-out, visibility 0s linear 0.5s;
+    -webkit-transition: opacity 0.5s ease-out, visibility 0s linear 0.5s; /* Safari & Chrome */
     -moz-transition: opacity 0.5s ease-out, visibility 0s linear 0.5s;
     -ms-transition: opacity 0.5s ease-out, visibility 0s linear 0.5s;
-    -o-transition: opacity 0.5s ease-out, visibility 0s linear 0.5s;
+    -o-transition: opacity 0.5s ease-out, visibility 0s linear 0.5s; /* Opera */
+    transition: opacity 0.5s ease-out, visibility 0s linear 0.5s; /* Properti standar */
 }
 
 #spinner.show {
