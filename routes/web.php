@@ -5,6 +5,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\DosenController;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\BukuController;
+
 
 Route::get('/', function () {
     return view('welcome');
@@ -30,6 +32,9 @@ Route::post('/pegawai/update', [PegawaiController::class, 'update']);
 Route::get('/pegawai/hapus/{id}', [PegawaiController::class, 'hapus']);
 Route::get('/pegawai/cari', [PegawaiController::class, 'cari']);
 
+Route::resource('buku', BukuController::class);
+Route::get('/buku/edit/{id}', [BukuController::class, 'edit']);
+Route::put('/buku/update/{id}', [BukuController::class, 'update']);
 
 Route::get('/formulir', [PegawaiController::class, 'formulir']);
 Route::post('/formulir/proses', [PegawaiController::class, 'proses']);

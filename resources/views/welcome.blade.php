@@ -194,6 +194,14 @@
                 'title' => 'Our Testimoni',
                 'link' => '/ourTestimoni'
             ],
+            [
+                'title' => 'Data Pegawai',
+                'link' => '/pegawai'
+            ],
+            [
+                'title' => 'Data Buku',
+                'link' => '/buku'
+            ],
         ];
     @endphp
 

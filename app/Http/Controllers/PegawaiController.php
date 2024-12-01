@@ -41,10 +41,12 @@ class PegawaiController extends Controller
         return redirect('/pegawai');
     }
     public function edit($id){
-        // Mengambil data dari tabel `belajar_laravel`
-        $pegawai = DB::table('belajar_laravel')->where('pegawai_id', $id)->get();
-        return view('edit', ['pegawai' => $pegawai]);
+        // Mengambil data pegawai berdasarkan ID dengan query builder
+        $pegawai = DB::table('belajar_laravel')->where('pegawai_id', $id)->first();
+        // Mengirimkan data ke view edit
+        return view('edit', compact('pegawai'));
     }
+
     public function update(Request $request){
         // Update data pada tabel `belajar_laravel`
         DB::table('belajar_laravel')->where('pegawai_id', $request->id)->update([
