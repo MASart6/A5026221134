@@ -6,7 +6,7 @@ use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\DosenController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\BukuController;
-
+use App\Http\Controllers\PageCounterController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -43,6 +43,7 @@ Route::get('/blog', [BlogController::class, 'home']);
 Route::get('/blog/tentang', [BlogController::class, 'tentang']);
 Route::get('/blog/kontak', [BlogController::class, 'kontak']);
 
+Route::get('/pagecounter', [PageCounterController::class, 'index']);
 
 // Start: Add assignments for sessions 1 to 7
 Route::get('/helloHtml', function(){
