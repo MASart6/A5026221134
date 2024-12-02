@@ -44,11 +44,11 @@
                 @endif
             </td>
             <td>
-                <a class="btn btn-warning btn-sm" href="{{ route('buku.edit', $b->kodebuku) }}">Edit</a>
+                <a class="btn btn-primary btn-sm" href="{{ route('buku.edit', $b->kodebuku) }}"><i class='fas fa-edit'></i></a>
                 <form action="{{ route('buku.destroy', $b->kodebuku) }}" method="POST" style="display:inline-block;">
                     @csrf
                     @method('DELETE')
-                    <button type="submit" class="btn btn-danger btn-sm">Hapus</button>
+                    <button type="submit" class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></button>
                 </form>
             </td>
         </tr>

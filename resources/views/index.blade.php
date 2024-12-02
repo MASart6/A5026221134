@@ -38,8 +38,8 @@
 			<td>{{ $p->pegawai_umur }}</td>
 			<td>{{ $p->pegawai_alamat }}</td>
 			<td>
-				<a class="btn btn-warning btn-sm" href="/pegawai/edit/{{ $p->pegawai_id }}">Edit</a>
-				<a class="btn btn-danger btn-sm" href="/pegawai/hapus/{{ $p->pegawai_id }}">Hapus</a>
+				<a class="btn btn-primary btn-sm" href="/pegawai/edit/{{ $p->pegawai_id }}"><i class='fas fa-edit'></i></a>
+				<a class="btn btn-danger btn-sm" href="/pegawai/hapus/{{ $p->pegawai_id }}"><i class="fa fa-trash"></i></a>
 			</td>
 		</tr>
 		@endforeach
