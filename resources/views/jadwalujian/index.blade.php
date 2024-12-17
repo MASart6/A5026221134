@@ -1,0 +1,47 @@
+@extends('layout.app')
+
+@section('content')
+<div class="container">
+    <div class="text-center mt-8" style="font-size: 2rem;">
+        <h2>Mohammad Affan Shofi - 5026221134</h2>
+        <h3 class="mt-3" style="font-size: 1.5rem;">@yield('tulisan1')</h3>
+    </div>
+
+        <div class="d-flex justify-content-center mt-3">
+            @if (!request()->is(['pegawai/edit*', 'pegawai/tambah*', 'buku/edit*', 'buku/create*']))
+                <a href="/"
+                    class="btn {{ request()->is('welcome*') ? 'btn-primary' : 'btn-secondary' }} me-2">
+                    Dashboard
+                </a>
+            @endif
+        </div>
+    <div class="d-flex justify-content-center mt-3 mb-3">
+        <h2>Daftar Jadwal Ujian</h2>
+    </div>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Kode Ujian</th>
+                <th>Tanggal Ujian</th>
+                <th>Jam Mulai</th>
+                <th>Nama Mata Kuliah</th>
+                <th>Aksi</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach ( $jadwals as $jadwal )
+                <tr>
+                    <td>{{ $jadwal->id }}</td>
+                    <td>{{ $jadwal->tanggalujian }}</td>
+                    <td>{{ $jadwal->jammulai }}</td>
+                    <td>{{ $jadwal->namamatakuliah }}</td>
+                    <td><a href="{{ route('jadwalujian.edit', $jadwal->id) }}" class="btn btn-warning">Edit</a></td>
+                </tr>
+            @endforeach
+        </tbody>
+    </table>
+    <div class="d-flex justify-content-center mb-3">
+        <a href="{{ route('jadwalujian.create') }}" class="btn btn-primary">Tambah Data</a>
+    </div>
+</div>
+@endsection

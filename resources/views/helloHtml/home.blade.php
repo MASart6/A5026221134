@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beranda - Pemrograman Web</title>
+    <title>Hello HTML</title>
     <style>
         body {
             background-color: #2e8b57; /* Hijau tua */

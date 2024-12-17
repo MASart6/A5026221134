@@ -202,6 +202,10 @@
                 'title' => 'Data Buku',
                 'link' => '/buku'
             ],
+            [
+                'title' => 'Jadwal Ujian',
+                'link' => '/jadwalujian'
+            ],
         ];
     @endphp
 

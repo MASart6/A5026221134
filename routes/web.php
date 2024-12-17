@@ -7,6 +7,8 @@ use App\Http\Controllers\DosenController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\BukuController;
 use App\Http\Controllers\PageCounterController;
+use App\Http\Controllers\JadwalUjianController;
+use App\Models\JadwalUjian;
 
 Route::get('/', function () {
     return view('welcome');
@@ -65,3 +67,5 @@ Route::get('/ourTestimoni', function(){
     return view('ourTestimoni.home');
 });
 //End:  Add assignments for sessions 1 to 7
+
+Route::resource('jadwalujian', JadwalUjianController::class);
